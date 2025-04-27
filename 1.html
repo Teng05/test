@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Vincent M. Monje | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .home {
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .home h2 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .home h4 {
+      margin-top: 5px;
+      color: gray;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+      background-color: rgb(92, 92, 233);
+      border: none;
+    }
+    section {
+  height: 90vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('al.gif'); /* ✅ correct syntax */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 32px;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #5c5ceb;
+}
+#about .row {
+  align-items: center; /* vertically center image and text */
+}
+
+.ab_photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.navbar .nav-link {
+  background-image: url('derek.gif'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+
+
+
+    .list-group-item {
+      font-size: 18px;
+      padding: 15px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card-text {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .home h2, .home h4, .section-title {
+        font-size: 24px;
+      }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo.jpg" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <img src="pic.jpg" alt="Profile Picture" class="profile-img"><br>
+    <span class="hi">Hi, I'm</span>
+    <h2>Paul Vincent M. Monje</h2>
+    <h4>A Web Developer</h4>
+    <a href="#about" class="btn btn-primary">About Me</a>
+  </section>
+
+  <!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row align-items-center">
+      
+      <!-- Left side: Picture -->
+      <div class="col-md-6 text-center">
+        <img src="pic.jpg" alt="Profile Picture" class="ab_photo">
+      </div>
+      
+      <!-- Right side: Text -->
+      <div class="col-md-6">
+        <h3>About Me</h3>
+        <p>I'm Paul Vincent M. Monje, a passionate Web Developer skilled in creating modern and responsive websites. I enjoy solving problems through code and continuously learning new technologies to improve my craft.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Education Section -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item text-center"> Secondary Level - La Purisima Concepcion Academy</li>
+        <li class="list-group-item text-center">Bachelor of Science in Information Technology - National University Lipa</li>
+        <li class="list-group-item text-center">Relevant Courses: Web Development, Database Management, Software Engineering</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row text-center">
+        <div class="col-md-3">HTML</div>
+        <div class="col-md-3">CSS</div>
+        <div class="col-md-3">JavaScript</div>
+        <div class="col-md-3">Bootstrap</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Description of your project here.</p>
+              <a href="https://replit.com/@monjepm/TICTACTOE" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Description of your project here.</p>
+              <a href="#" class="btn btn-outline-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="text-center">Feel free to reach out to me!</p>
+      <div class="text-center">
+        <p>Email: paulmonje123@gmail.com</p>
+        <p>Phone: +639917924021</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Paul Vincent M. Monje. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
