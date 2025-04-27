@@ -23,12 +23,12 @@
 
     .home h2 {
       margin-top: 10px;
-      font-weight: bold;
+      
     }
 
     .home h4 {
       margin-top: 5px;
-      color: gray;
+      
     }
 
     .btn-primary {
@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color:#BBDEE4;
+  background: linear-gradient(#17EAD9, #6078EA);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,14 +84,13 @@
   margin-bottom: 20px;
 }
 .navbar {
-  background-color: #4C7766 ;
+  background-color: #00ffff ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white !important;
 }
 
-/* New Home section styles */
+
 .text-content {
   max-width: 600px;
 }
@@ -99,7 +98,9 @@
 .home-image {
   width: 400px;
   max-width: 90%;
-  border-radius: 20px;
+  object-fit: cover;
+  Border-radius: 50%;
+  margin-left: 50px;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -112,28 +113,36 @@
     transform: translateY(-20px);
   }
 }
-.type{
-  width: 100%;
-  border-right: 3px solid #4C7766;
+.type {
+  display: inline-block;
   overflow: hidden;
-  animation: animate1 3s steps(10) 1s forwards,
-  animate2 .5s infinite alternate;
-
+  white-space: nowrap;
+  border-right: 3px solid #4C7766;
+  font-size: 2rem;
+  animation: typing 8s steps(30, end) infinite, blink 0.75s step-end infinite;
 }
 
-@keyframes animate1{
-  from {
+@keyframes typing {
+  0% {
     width: 0;
-  } to {
-    width: 9ch;
+  }
+  50% {
+    width: 26ch; /* Adjust depending on text length */
+  }
+  100% {
+    width: 0;
   }
 }
-@keyframes animate2{ 
-  from {
-    border-right: transparent;
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
   }
-  
+  50% {
+    border-color: black;
+  }
 }
+
 
 
 
@@ -153,6 +162,9 @@
 
     .card-text {
       font-size: 16px;
+    }
+    .nav-item a {
+     font-weight: bold;
     }
 
     @media (max-width: 768px) {
@@ -191,16 +203,18 @@
       
       <!-- Text Section -->
       <div class="text-content">
-        <h1 class="display-4 mb-3 animate-text">Hi, I'm <br> 
-          <span style="color: #4C7766;">Paul Vincent M. Monje</span>
-        </h1>
-        <h3>A Passionate <span class="type">Web Developer</span></h3>
+        <h5 class="display-4 mb-3 animate-text">Hi, I'm <br> 
+          <span style="font-weight: bold;">Paul Vincent M. Monje</span>
+        </h5>
+        <h2 style="font-style: italic;">A Passionate  </h2>
+        <h2 style="font-style: italic;" class="type">Web Developer & Programmer <br></h2>
+        <h2></h2>
         <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
       </div>
   
       <!-- Image Section -->
       <div class="image-content">
-        <img src="pic.jpg" alt="Profile Picture" class="home-image">
+        <img src="hm.jpg" alt="Profile Picture" class="home-image">
       </div>
   
     </div>
@@ -221,7 +235,7 @@
       <!-- Right side: Text -->
       <div class="col-md-6">
         <h3>About Me</h3>
-        <p>I'm Paul Vincent M. Monje, a passionate Web Developer skilled in creating modern and responsive websites. I enjoy solving problems through code and continuously learning new technologies to improve my craft.</p>
+        <p style="font-size: 20px;">I'm Paul Vincent M. Monje, a passionate Web Developer skilled in creating modern and responsive websites. I enjoy solving problems through code and continuously learning new technologies to improve my craft.</p>
       </div>
 
     </div>
