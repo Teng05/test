@@ -37,7 +37,7 @@
       border: none;
     }
     section {
-  height: 90vh;
+  min-height: 100vh;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -145,6 +145,65 @@
 
 
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 150px;
+  padding-top: 40px;
+}
+
+.card {
+  position: relative;
+  width: 150%;
+  max-width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 128, 255, 0.8));
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+#More_info {
+  padding: 80px 20px;
+  background: linear-gradient(#17EAD9, #6078EA);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+
+
 
     .list-group-item {
       font-size: 18px;
@@ -189,8 +248,6 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -235,10 +292,56 @@
       <!-- Right side: Text -->
       <div class="col-md-6">
         <h3>About Me</h3>
-        <p style="font-size: 20px;">I'm Paul Vincent M. Monje, a passionate Web Developer skilled in creating modern and responsive websites. I enjoy solving problems through code and continuously learning new technologies to improve my craft.</p>
+        <p style="font-size: 16px;">I'm Paul Vincent M. Monje, i'm currently 2nd year college in National University Lipa
+           taking Bachelor of Science in Information Technology, major in Mobile and Web Application.
+          Being an IT student, i Do believe that in this field I must understand, learn and stay updated with the latest
+        technologies. Thats why I am a person whose ambition is more desirable so that I can be more technologically
+      advance and hvae a positive vision for my future.</p>
+      <a href="#More_info" class="btn btn-primary btn-lg">Know more?</a>
       </div>
 
     </div>
+  </div>
+</section>
+
+
+<!-- More Self Information-->
+<section id="More_info">
+  <div class="container">
+    <h2 class="section-title">More About Me</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="BA.jpg" alt="Basketball" />
+        <div class="overlay">
+          <h3>Badminton</h3>
+          <p>Since I was a kid I like playing Badminton. Badminton has not only improved my physical health but also instilled in me values like discipline, teamwork, and resilience. It’s a sport that constantly challenges my limits and reminds me to stay focused and committed both on and off the court.</p>
+        </div>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="pa.jpeg" alt="Couple" />
+        <div class="overlay">
+          <h3>Memories</h3>
+          <p>Every moment with my partner feels like a gentle reminder that I’m not alone through laughter, quiet conversations, or just standing side by side. These memories hold a special kind of magic, showing me the beauty of love, support, and simply being there for one another. In a world that often rushes by, these moments are my anchor, reminding me to cherish the simple joys and the deep connections we share.</p>
+          
+        </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="ml.jpg" alt="Style" />
+        <div class="overlay">
+          <h3>Mobile Legends</h3>
+          <p>Just like badminton I also love to play online games like Mobile Legends, it’s a way of expressing strategy, leadership, and confidence. Just like fashion, it allows me to show who I am, bond with friends, and enjoy the thrill of collaboration and competition.
+        </p>
+        </div>
+      </div>
+    </div>
+    
+      
+      
   </div>
 </section>
 
@@ -257,58 +360,6 @@
   </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-success" style="width: 25%" style="border-radius: 0%; " >c++</div>
-      </div>
-
-      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-danger" style="width: 25%" style="border-radius: 0%;">CSS</div>
-      </div>
-
-      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-info" style="width: 40%" style="border-radius: 0%;">Javascript</div>
-      </div>
-
-      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-warning" style="width: 50%" style="border-radius: 0%;">HTML</div>
-      </div>
-
-      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-        <div class="progress-bar bg-danger" style="width: 70%" style="border-radius: 0%;" >Java</div>
-      
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Description of your project here.</p>
-              <a href="https://replit.com/@monjepm/TICTACTOE" class="btn btn-outline-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Description of your project here.</p>
-              <a href="#" class="btn btn-outline-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section id="contact">
